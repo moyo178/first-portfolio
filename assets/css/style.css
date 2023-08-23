@@ -6,6 +6,7 @@ body{
     line-height: 1.6em;
     margin:0;
     max-width: 100%;
+    padding-left:100px;
 }
 
 #navbar{
@@ -67,6 +68,11 @@ display: inline;
 #parentdiv{
     display: flex;
 
+}
+
+#array-first-div{
+        background-color: #ffff;
+        color: #000000;
 }
 
 #parentdiv div{
@@ -195,8 +201,13 @@ display: inline;
 
 
 #mainfooter-text{
-   padding-left: 400px;
-
+   padding-left: 200px;
+   color: #000000;
+}
+#mainfooter-logos{
+    padding-left: 200px;
+    justify-content: space-between;
+    word-spacing: 30px;
 }
 
 
@@ -239,4 +250,15 @@ display: inline;
     /* font-weight: 600px; */
     line-height: 60px;
     height: auto;
+}
+
+.array{
+    background-color: white;
+    color: #000000;
+}
+
+#parent-div{
+    color: black;
+    background-color: #ffffff;
+    display: flex;
 }
