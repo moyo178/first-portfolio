@@ -1,20 +1,17 @@
 body{
     background-color: #ffff;
-    color: #f4f4f4;
     font-family: Heebo, Arial, Helvetica, sans-serif;
     font-size: 15px;
     line-height: 1.6em;
     margin:0;
     max-width: 100%;
-    padding-left:100px;
 }
 
 #navbar{
-    background-color: white;
+    background-color: inherit;
     color:black;
     height: 50px;
     width: 100%;
-    /* float:right */
 }
 
 #navbar ul{ 
@@ -35,10 +32,12 @@ display: inline;
 .header{
     background-color: white;
     color: #181616;
-    height: 350px;
+    min-height: 350px;
     width: 100%;
     padding: 100px;
     display: flex;
+    gap: 80px;
+    flex-direction: row-reverse;
 }
 
 #header-first-div{
@@ -50,10 +49,16 @@ display: inline;
     line-height: 60px;
 }
 
-#header-img-div img{
+#header-img-div{
+    /* text-align: center; */
     /* justify-items: center; */
+    padding-top: 80px;
+
+}
+
+#header-img-div img{
     padding-left: 80px;
-    margin-left: auto; 
+    /* margin-left: auto;  */
 }
 #hero-img-div img{
     margin-right: auto;
@@ -261,4 +266,20 @@ display: inline;
     color: black;
     background-color: #ffffff;
     display: flex;
+}
+
+
+@media screen and (max-width: 768px) {
+    /* body{ */
+        /* background-color: maroon; */
+    /* } */
+
+    #navbar{
+        display: none;
+    }
+
+    .header{
+        display: block;
+        /* height: 650px; */
+    }
 }
