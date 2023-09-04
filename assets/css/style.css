@@ -70,10 +70,8 @@ display: inline;
 /* #hero-second-div{
 
 } */
-#parentdiv{
-    display: flex;
-
-}
+/* #parentdiv{
+} */
 
 #array-first-div{
         background-color: #ffff;
@@ -92,9 +90,10 @@ display: inline;
 .contentarea{
     background-color:#EDF7FA;    
     /* width: 1200px; */
-    height: 396px;
+    min-height: 400px;
     padding-right: 100px;
     padding-left: 100px;
+    min-width: max-content;
 }
 .hero{
     background-color: white;
@@ -104,6 +103,7 @@ display: inline;
 #hero-first-div{
     color: black;
     background-color: white;
+   
 }
 #hero-second-div{
     padding-left: 20px;
@@ -123,22 +123,31 @@ display: inline;
 #contentarea-box-div{
     color: #000000;
     margin-right: 20px;
-    padding: 20px;
-    margin-left: auto;
+    /* margin-left: auto; */
+    /* float: left; */
+    width: 50%;
+   
+    box-sizing: border-box;
+
 }
 #contentarea-box1-div{
     color: #181616;
-    padding: 20px;
-    margin-left: 30px;
+    /* padding: 20px;
+    margin-left: 30px; */
+    float: right;
+    width: 50%;
+   
+    box-sizing: border-box;
+    
 }
-#sidebar{
+/* #sidebar{
     width:506px;
     height:105px;
     top:228px;
     left:0px;
     margin-left:0px;
     margin-bottom: 5px;
-}
+} */
 .btn{
     display: block;
     width: 200px;
@@ -194,25 +203,28 @@ display: inline;
     background-color: #142850;
     color: #ffff;
     text-align: center;
+
 }
 #text{
-    display: flex;
+
     color: black;
 }
-.childdiv{
-    display: flex;
-    justify-content: space-between;
+#childdiv{
+   
+    align-items: center;
 }
 
 
 #mainfooter-text{
    padding-left: 200px;
    color: #000000;
+
 }
 #mainfooter-logos{
-    padding-left: 200px;
+    padding-left: 20px;
     justify-content: space-between;
     word-spacing: 30px;
+    text-align: center;
 }
 
 
@@ -267,15 +279,17 @@ display: inline;
     background-color: #ffffff;
     display: flex;
 }
+#text{
+    min-height: 100px;
+}
 
-
-@media screen and (max-width: 768px) {
+@media(max-width: 600px) {
     /* body{ */
         /* background-color: maroon; */
     /* } */
 
     #navbar{
-        display: none;
+        padding-right:50px;
     }
 
     .header{
@@ -283,3 +297,36 @@ display: inline;
         /* height: 650px; */
     }
 }
+@media(max-width:600px){
+   
+   #parentdiv2{
+    display: block;
+   }
+   
+    #parentdiv3{
+        display: block;
+    }
+   
+    #parentdiv4 {
+        /* display: none; */
+        /* flex-direction: row-reverse; */
+        display:block;
+    }
+
+    #mainfooter-text{
+        padding: 20px;
+        color: #000000;
+        text-align: center;
+     
+     }
+     #mainfooter-logos{
+         padding-left: 20px;
+         justify-content: space-between;
+         word-spacing: 30px;
+         text-align: center;
+     }
+  
+}
+
+
+
